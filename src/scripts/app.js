@@ -1,11 +1,12 @@
 import { gsap } from 'gsap';
 
 console.log(gsap.version);
-gsap.to(
-  ".rond",
-  {duration: 2, backgroundColor: '#009999', scale:3}
+gsap.fromTo(
+  ".title--line",
+  {opacity:0, scale:.5, y:'-=400'},
+  {opacity:1, scale:1, y:0, ease: "back.out(1.7)", duration:1, stagger: .2}
 );
-gsap.to(
-  ".carre",
-  {duration: 1, backgroundColor: '#FF0', rotateY:-180}
-);
+// gsap.to(
+//   ".title--line",
+//   {opacity:1, scale:1, y:0, ease: "back.out(1.7)", duration:2, stagger: .6}
+// );
