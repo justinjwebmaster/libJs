@@ -1,13 +1,11 @@
 import { gsap } from 'gsap';
 
 console.log(gsap.version);
-gsap.fromTo(
+gsap.to(
   ".rond",
-  {backgroundColor: '#000', scale:1},
-  {duration: 4, backgroundColor: '#009999', scale:3}
+  {duration: 2, backgroundColor: '#009999', scale:3}
 );
-gsap.fromTo(
+gsap.to(
   ".carre",
-  {backgroundColor: '#FFF', rotateY:0},
-  {duration: 2, backgroundColor: '#099', rotateY:-180}
+  {duration: 1, backgroundColor: '#FF0', rotateY:-180}
 );
