@@ -3,6 +3,10 @@
 
 body{
   background-color: black;
+  overflow: hidden;
+  background-image: url('../assets/images/noise.png');
+  background-size: 400px;
+  background-repeat: repeat;
 }
 
 .title{
