@@ -1,19 +1,56 @@
 @import 'utils/variables';
 @import 'components/type';
 
+body{
+  background-color: black;
+}
+
 .title{
-  color: #88f;
-  font-size: 140px;
+  color: #0FF;
+  font-size: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
 
   &--line{
     display: block;
+    width: 100%;
+  }
+}
+
+.logo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.def{
+  color: #FC0;
+  transform: perspective(300px) rotateX(28deg);
+  transform-origin: 50% 100%;
+  font-size: 60px;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+
+  &--title{
+    font-size: 80px;
+    text-transform: uppercase;
   }
 
-  &--bold{
-    color: #8FF;
+  &--center{
+    text-align: center;
+  }
+
+  &--justify{
+    text-align: justify;
   }
 }
