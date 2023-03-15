@@ -32,26 +32,38 @@ console.log(gsap.version);
 //   {opacity:1, scale:1, y:0, ease: "back.out(1.7)", duration:2, stagger: .6}
 // );
 
+
+
 //Correction
-gsap.from(
-  ".title--line",
-  {
-    opacity:0,
-    duration:1,
-    y:'-=20',
-    scale:.5,
-    stagger:.5,
-    ease: "back.out(1.7)",
-    onComplete: function(){
-      gsap.to(
-        '.title',
-        {
-          duration:1,
-          opacity:0,
-          scale:0,
-          delay:2
-        }
-      )
-    }
-  }
-);
+// const anim = gsap.from(
+//   ".title--line",
+//   {
+//     paused: true,
+//     opacity:0,
+//     duration:1,
+//     y:'-=20',
+//     scale:.5,
+//     stagger:.5,
+//     ease: "back.out(1.7)",
+//     onComplete: function(){
+//       gsap.to(
+//         '.title',
+//         {
+//           duration:1,
+//           opacity:0,
+//           scale:0,
+//           delay:2
+//         }
+//       );
+//     }
+//   }
+// );
+
+// const btn = document.querySelector('.btn');
+// btn.addEventListener('click', playAnimation());
+
+// function playAnimation(){
+//   anim.timeScale(.1);
+//   anim.play();
+// }
+
