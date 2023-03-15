@@ -1,19 +1,20 @@
 @import 'utils/variables';
 @import 'components/type';
 
-.title{
-  color: #88f;
-  font-size: 140px;
+.box{
+  background: #8F8;
+  width: 100px;
+  height: 100px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 900px;
 
-  &--line{
-    display: block;
+  &:first-of-type{
+    background: #DE34FD;
   }
 
-  &--bold{
-    color: #8FF;
+  &:last-of-type{
+    background: #56FFDE;
   }
 }
