@@ -5,14 +5,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".box", {
   x: 500,
-  duration: 1,
+  duration: 10,
   // scrollTrigger est un object ce qui permet
   // d'ajouter des configurations
   scrollTrigger: {
     trigger: ".box",
-    start: "20px 80%",
-    end: "+=300",
-    scrub: 0.5,
-    pin: true,
+    start: "20px 60%",
+    markers: true,
   },
 });
